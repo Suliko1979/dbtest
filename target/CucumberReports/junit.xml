@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="8" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="9" time="105.772">
+    <testcase classname="Digital Bank Registration Page" name="Positive Case: As a user I want to successfully create Digital bank account" time="23.944">
+        <system-out><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................passed
+Then User should be displayed with the message "Registration Successful. Please Login".passed
+Then the following user info should be saved in DB..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data" time="13.076">
+        <failure message="Unable to locate element: #agree\-terms&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=agree-terms}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................failed
+Then User should the "title" required field error message "Please select an item in the list.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.fillOutRegistrationPage(RegistrationPage.java:139)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_creates_account_with_the_following_fields(RegistrationSteps.java:30)
+	at ✽.User creates account with the following fields(classpath:ui.features/LoginAndRegistration/Registration.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data 2" time="8.813">
+        <failure message="Unable to locate element: #agree\-terms&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=agree-terms}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................failed
+Then User should the "firstName" required field error message "Please fill out this field.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.fillOutRegistrationPage(RegistrationPage.java:139)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_creates_account_with_the_following_fields(RegistrationSteps.java:30)
+	at ✽.User creates account with the following fields(classpath:ui.features/LoginAndRegistration/Registration.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data 3" time="8.847">
+        <failure message="Unable to locate element: #agree\-terms&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=agree-terms}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................failed
+Then User should the "lastName" required field error message "Please fill out this field.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.fillOutRegistrationPage(RegistrationPage.java:139)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_creates_account_with_the_following_fields(RegistrationSteps.java:30)
+	at ✽.User creates account with the following fields(classpath:ui.features/LoginAndRegistration/Registration.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data 4" time="9.273">
+        <failure message="Unable to locate element: #agree\-terms&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=agree-terms}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................failed
+Then User should the "gender" required field error message "Please select one of these options.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.fillOutRegistrationPage(RegistrationPage.java:139)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_creates_account_with_the_following_fields(RegistrationSteps.java:30)
+	at ✽.User creates account with the following fields(classpath:ui.features/LoginAndRegistration/Registration.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data 5" time="9.88">
+        <failure message="Unable to locate element: #agree\-terms&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=agree-terms}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................failed
+Then User should the "dob" required field error message "Please fill out this field.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.fillOutRegistrationPage(RegistrationPage.java:139)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_creates_account_with_the_following_fields(RegistrationSteps.java:30)
+	at ✽.User creates account with the following fields(classpath:ui.features/LoginAndRegistration/Registration.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data 6" time="10.131">
+        <failure message="Unable to locate element: #agree\-terms&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=agree-terms}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................failed
+Then User should the "ssn" required field error message "Please fill out this field.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.fillOutRegistrationPage(RegistrationPage.java:139)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_creates_account_with_the_following_fields(RegistrationSteps.java:30)
+	at ✽.User creates account with the following fields(classpath:ui.features/LoginAndRegistration/Registration.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Digital Bank Registration Page" name="Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data 7" time="9.143">
+        <failure message="Unable to locate element: #agree\-terms&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=agree-terms}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user with "jack@test.com" is not in DB............................passed
+And User navigates to Digital Bank signup page..............................passed
+When User creates account with the following fields.........................failed
+Then User should the "email" required field error message "Please fill out this field.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.RegistrationPage.fillOutRegistrationPage(RegistrationPage.java:139)
+	at co.wedevx.digitalbank.automation.ui.steps.RegistrationSteps.user_creates_account_with_the_following_fields(RegistrationSteps.java:30)
+	at ✽.User creates account with the following fields(classpath:ui.features/LoginAndRegistration/Registration.feature:24)
+]]></failure>
+    </testcase>
+    <testcase classname="Creating a new checking account" name="Create a standard individual checking account" time="12.348">
+        <failure message="Unable to locate element: #checking\-menu&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a&#10;*** Element info: {Using=id, value=checking-menu}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user logged in as "elonmusk@gmail.com" "Tester123"................passed
+When the user creates a new checking account with the following data........failed
+Then the user should see the green "Successfully created new Standard Checking account named Elon Musk Second Checking" message.skipped
+And the user should see newly added account card............................skipped
+And the user should see the following transactions..........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: #checking\-menu
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=checking-menu}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at co.wedevx.digitalbank.automation.ui.pages.CreateCheckingPage.createNewChecking(CreateCheckingPage.java:47)
+	at co.wedevx.digitalbank.automation.ui.steps.CheckingAccountSteps.the_user_creates_a_new_checking_account_with_the_following_data(CheckingAccountSteps.java:38)
+	at ✽.the user creates a new checking account with the following data(classpath:ui.features/checking/NewChecking.feature:6)
+]]></failure>
+    </testcase>
+</testsuite>
