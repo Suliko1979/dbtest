@@ -1,0 +1,92 @@
+-------------------------------------------------------------------------------
+Test set: UIRegressionRunner
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 0, Errors: 8, Skipped: 0, Time elapsed: 106.207 s <<< FAILURE! - in UIRegressionRunner
+Example #1  Time elapsed: 13.145 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+
+Example #2  Time elapsed: 8.797 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+
+Example #3  Time elapsed: 8.853 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+
+Example #4  Time elapsed: 9.284 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+
+Example #5  Time elapsed: 9.896 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+
+Example #6  Time elapsed: 10.131 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+
+Example #7  Time elapsed: 9.15 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #agree\-terms
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=agree-terms}
+
+Create a standard individual checking account  Time elapsed: 12.354 s  <<< ERROR!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: #checking\-menu
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'user1s-MacBook-Pro.local', ip: '2601:5c1:4401:43c0:0:0:0:525a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '12.6.8', java.version: '19.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 21.6.0, moz:processID: 11120, moz:profile: /var/folders/tv/gdz5bgzj6bx..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 362186c2-74e9-4a8a-8b23-d82455e60d0a
+*** Element info: {Using=id, value=checking-menu}
+
