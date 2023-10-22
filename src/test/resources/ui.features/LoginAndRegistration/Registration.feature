@@ -1,41 +1,33 @@
-
 @Registration
 Feature: Digital Bank Registration Page
+
   Background:
-    Given the user with "jack@test.com" is not in DB
+    Given The user with "jack@test.co" is not in DB
     And User navigates to Digital Bank signup page
 
+
   @Test
-  Scenario: Positive Case: As a user I want to successfully create Digital bank account
-    When User creates account with the following fields
-
-    |title |firstName|lastName|gender|  dob        |ssn         |   email        |  password   |address      |locality|region|postalCode|country|homePhone|mobilePhone|workPhone|
-    |  Mr. |Jack     | Test   | M    |12/12/1990   | 122-33-4453|  jack@test.com  |Tester123    | 12 Main str  | City  | CA   |  9921    |  US   |   3423  |5436543    | 9876545678|
-
-    Then User should be displayed with the message "Registration Successful. Please Login"
-
-    Then the following user info should be saved in DB
-      |title |firstName|lastName|gender|  dob        |ssn         |email        |  password   |address      |locality|region|postalCode|country|homePhone|mobilePhone|workPhone   |accountNonExpired|accountNonLocked|credentialsIsNonExpired|enabled|
-      |  Mr. |Jack     | Test   | M    |12/12/1990   | 122-33-4453| jack@test.com|Tester123    | 12 Main str  | City  | CA   |  9921    |  US   |   3423  |5436543    | 9876545678|true             |true            |true                   |   true|
+  Scenario: Positive Case. As a user, I want to successfully create Digital Bank account
+    When User creates account with following fields
+      | title | firstName | lastName | gender | dob        | ssn         | email        | password  | address    | locality | region | postalCode | country | homePhone  | mobilePhone | workPhone  | termsCheckMark |
+      | Mr.   | Jack      | Test     | M      | 12/12/1990 | 123-44-2235 | jack@test.co | Tester123 | 12 Main st | City     | CA     | 99921      | US      | 2146591008 | 2136591208  | 1126593008 | true           |
+    Then User should be displayed with the message "Success Registration Successful. Please Login."
+    Then the following user info should be saved in the db
+      | title | firstName | lastName | gender | dob        | ssn         | email        | password  | address    | locality | region | postalCode | country | homePhone  | mobilePhone | workPhone  |accountNonExpired|accountNonLocked|credentialsNonExpired|enabled|
+      | Mr.   | Jack      | Test     | M      | 12/12/1990 | 123-44-2235 | jack@test.co | Tester123 | 12 Main st | City     | CA     | 99921      | US      | 2146591008 | 2136591208  | 1126593008 |true             |true            |true                 |true   |
 
 
   @NegativeRegistrationCases
-    Scenario Outline: Negative Test Case: As a DB admin, I want to make sure users can't register without providing all valid data
-      When User creates account with the following fields
+  Scenario Outline: Negative Test Cases. As a Digital Bank Admin I want to make sure users can not register without providing all valid data
+    When User creates account with following fields
+      | title   | firstName   | lastName   | gender   | dob   | ssn   | email   | password   | address   | locality   | region   | postalCode   | country   | homePhone   | mobilePhone   | workPhone   | termsCheckMark   |
+      | <title> | <firstName> | <lastName> | <gender> | <dob> | <ssn> | <email> | <password> | <address> | <locality> | <region> | <postalCode> | <country> | <homePhone> | <mobilePhone> | <workPhone> | <termsCheckMark> |
+    Then the User should see the "<fieldWithError>" required field error message "<errorMessage>"
 
-        |title    |firstName  |lastName  |gender|  dob   | ssn  |email|password   |address  |locality   |region  |postalCode  |country  | homePhone    |mobilePhone  |workPhone   |
-        |<title> |<firstName>|<lastName>|<gender>|  <dob>|<ssn>|<email> |<password>|<address> |<locality> |<region>|<postalCode>|<country>|<homePhone>   |<mobilePhone>|<workPhone>|
 
-      Then User should the "<fieldWithError>" required field error message "<errorMessage>"
-
-      Examples:
-
-        |title |firstName|lastName|gender|  dob        |ssn       |email |password   |address     |locality|region|postalCode|country|homePhone|mobilePhone|workPhone|termsCheckMark|fieldWithError |errorMessage                         |
-        |      |         |        |       |            |            |      |          |             |         |      |         |      |           |          |         |              |   title       |  Please select an item in the list. |
-        |  Mr. |         |        |       |            |            |      |          |             |         |      |         |      |           |          |         |              |   firstName   |  Please fill out this field.        |
-        |  Mr. |  Jack   |        |       |            |            |      |          |             |         |      |         |      |           |          |         |              |   lastName    |  Please fill out this field.        |
-        |  Mr. |  Jack   |   Test |       |            |            |      |          |             |         |      |         |      |           |          |         |              |   gender      |  Please select one of these options.        |
-        |  Mr. |  Jack   |   Test |   M   |            |            |      |          |             |         |      |         |      |           |          |         |              |   dob         |  Please fill out this field.        |
-        |  Mr. |  Jack   |   Test |   M   | 12/12/1990 |            |      |          |             |         |      |         |      |           |          |         |              |   ssn         |  Please fill out this field.        |
-        |  Mr. |  Jack   |   Test |   M   | 12/12/1990 |122-33-4453|      |          |             |         |      |         |      |           |          |         |              |   email       |  Please fill out this field.        |
-
+    Examples:
+      | title | firstName | lastName | gender | dob | ssn | email | password | address | locality | region | postalCode | country | homePhone | mobilePhone | workPhone | termsCheckMark | fieldWithError | errorMessage                        |
+      |       |           |          |        |     |     |       |          |         |          |        |            |         |           |             |           |                | title          | Please select an item in the list.  |
+      | Mr.   |           |          |        |     |     |       |          |         |          |        |            |         |           |             |           |                | firstName      | Please fill out this field.         |
+      | Mr.   | Jack      |          |        |     |     |       |          |         |          |        |            |         |           |             |           |                | lastName       | Please fill out this field.         |
+      | Mr.   | Jack      | Test     |        |     |     |       |          |         |          |        |            |         |           |             |           |                | gender         | Please select one of these options. |

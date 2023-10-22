@@ -5,28 +5,36 @@ import co.wedevx.digitalbank.automation.ui.utils.DBUtils;
 import co.wedevx.digitalbank.automation.ui.utils.Driver;
 import io.cucumber.java.*;
 
+import co.wedevx.digitalbank.automation.ui.utils.ConfigReader;
+import co.wedevx.digitalbank.automation.ui.utils.DBUtils;
+import co.wedevx.digitalbank.automation.ui.utils.Driver;
+import io.cucumber.java.*;
+
 import static co.wedevx.digitalbank.automation.ui.utils.Driver.getDriver;
 
 public class Hooks {
+
     @Before("@Registration")
     public void establishConnectionToDB() {
         DBUtils.establishConnection();
     }
 
+
     @Before("not @Registration")
-    public void getToHomePage() {
+    public void the_user_is_on_dbank_homepage() {
         getDriver().get(ConfigReader.getPropertiesValue("digitalbank.url"));
     }
 
+
     @After("not @NegativeRegistrationCases")
     public void afterEachScenario(Scenario scenario) {
-        Driver.takeScreenshot(scenario);
+        Driver.takeScreenShot(scenario);
         Driver.closeDriver();
     }
 
-    @After("@Registration")
-    public static void closeConnectionToDB() {
+    @After()
+    public static void closeConnectionToDB(){
         DBUtils.closeConnection();
     }
-}
 
+}
